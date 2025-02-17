@@ -1,0 +1,214 @@
+.container .setting {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    border-bottom: 3px var(--secondary-color) outset;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.container .setting:last-of-type {
+    border: none;
+}
+
+.container .setting div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container .setting div .setting-icon {
+    width: 10px;
+}
+
+.container .setting i {
+    text-shadow: var(--shadow-color) 1px 1px 1px;
+
+}
+
+.container .setting div .setting-icon.symbol-icon {
+    font-style: normal;
+    font-family: 'alex-brush';
+    font-weight: 700;
+}
+
+.container .setting div p {
+    font-family: 'roboto';
+    font-size: 18px;
+    font-weight: normal;
+    padding: 5px;
+    text-align: start;
+    width: unset;
+}
+
+.sounds {
+    width: 300px;
+}
+
+.sounds p {
+    font-family: 'roboto';
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    margin-top: -50px;
+    text-align: center;
+    text-shadow: var(--shadow-color) 1px 1px 1px;
+}
+
+.sounds .sound-settings .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.sounds .sound-settings input[type="range"] {
+    width: 250px;
+}
+
+.colors, .fonts {
+    width: 300px;
+    height: 158px;
+    display: flex;
+    gap: 15px;
+}
+
+.colors .left, .fonts .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors .left .output-theme, .fonts .left .output-sample {
+    background-image: var(--main-bg-v);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: var(--main-color) 2px solid;
+    border-radius: 10px;
+}
+
+.fonts .left .output-sample {
+    color: var(--text-color);
+}
+
+.colors .left .logo {
+    font-size: 40px !important;
+    letter-spacing: 5px !important;
+    margin-left: 7px !important;
+}
+
+
+.colors .left .title {
+    font-size: 8px !important;
+    margin-top: -10px !important;
+}
+
+.colors .left .link {
+    width: 85px !important;
+    margin: 3px !important;
+    border-radius: 5px !important;
+
+}
+
+.colors .left .link p {
+    font-size: 8px !important;
+    padding: 5px 10px !important;
+}
+
+.colors .right, .fonts .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors .right .slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.colors .right .slider .arrow {
+    color: var(--text-color);
+    text-shadow: var(--shadow-color) 1px 1px 1px;
+    cursor: pointer;
+}
+
+.colors .right .slider .themes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    height: 120px;
+    overflow: auto;
+}
+
+.colors .right .theme-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transition: 0.7s ease;
+}
+
+.colors .right .theme-box .row {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+
+.colors .right .theme-box .row2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.colors .right .theme-box .row div {
+    width: 50%;
+    height: 100%;
+}
+
+.colors .right .theme-box .row2 div {
+    width: 100%;
+}
+
+.apply {
+    font-family: 'roboto';
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 700;
+    text-shadow: var(--shadow-color) 1px 1px 1px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    background-image: var(--main-bg-h);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: var(--main-color) 2px outset;
+    box-shadow: var(--shadow-color) 1px 1px 1px;
+}
+
+.hidden {
+    opacity: 0;
+    transition: 0.7s ease;
+}
+
